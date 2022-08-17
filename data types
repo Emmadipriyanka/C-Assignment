@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    unsigned int x=-1;
+    int y=x;
+    printf("x=%u y=%d\n",x,y);
+    
+    unsigned short m=-1;
+    short n=m;
+    printf("m=%u n=%d \n",m,n);
+    
+    unsigned long p=-1;
+    long q=p;
+    printf("p=%lu q=%ld \n",p,q);
+}
+
+
+output:
+
+x=4294967295 y=-1
+m=65535 n=-1 
+p=18446744073709551615 q=-1

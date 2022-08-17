@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main()
+{
+    int area;
+    int circum;
+    int r=10,pie=3.14;
+    area=pie*r*r;
+    circum=2*pie*r;
+    printf("area=%d circum=%d",area,circum);
+
+    return 0;
+}

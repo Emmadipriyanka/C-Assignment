@@ -10,3 +10,7 @@ int main()
 
     return 0;
 }
+
+
+output:
+area=300     circum=60

@@ -1,16 +1,17 @@
-#include <stdio.h>
+const float pie=3.14;
+#include<stdio.h>
 int main()
 {
-    int area;
-    int circum;
-    int r=10,pie=3.14;
+    float area,circum;
+    int r;
+    printf("enter r value:");
+    scanf("%d",&r);
     area=pie*r*r;
     circum=2*pie*r;
-    printf("area=%d circum=%d",area,circum);
-
-    return 0;
+    printf("area=%.2f circum=%.2f",area,circum);
 }
 
-
 output:
-area=300     circum=60
+
+enter r value:5
+area=78.50 circum=31.40

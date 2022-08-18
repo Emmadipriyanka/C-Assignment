@@ -2,15 +2,24 @@
 void fun()
 {
     static int b=5;
+    ++b;
     printf("static=%d\n",b);
+    auto int a=10;
+    ++a;
+    printf("auto=%d \n",a);
 }
 int main()
 {
-    auto int a=10;
-    printf("auto=%d \n",a);
+    fun();
+    fun();
     fun();
 }
 
 output:
-auto=10
-static=5
+
+static=6
+auto=11 
+static=7
+auto=11 
+static=8
+auto=11 

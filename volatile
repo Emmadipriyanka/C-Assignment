@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+    int a=6; //variable a is declared and initialized 
+    volatile int b=9; //volatile variable b is declared and initialized
+    printf("%d %d %d \n",++a,++a,++a); //it will prints from right to left
+    printf("%d %d %d",++b,++b,++b); //it will print from right to left
+}
+
+output:
+9 9 9
+12  11 10

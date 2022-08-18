@@ -1,9 +1,9 @@
 #include<stdio.h>
 void fun()
 {
-    static int b=5;
-    ++b;
-    printf("static=%d\n",b);
+    static int b=5; //static variable is declared and initialized. 
+    ++b; //preincrement 
+    printf("static=%d\n",b);  printing the value of a static variable
     auto int a=10;
     ++a;
     printf("auto=%d \n",a);

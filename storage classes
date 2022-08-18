@@ -1,15 +1,17 @@
+//auto int r;  //file-scope declaration of ‘r’ specifies ‘auto’
 #include<stdio.h>
 void fun()
 {
-    static int b=5; //static variable is declared and initialized. 
-    ++b; //preincrement 
-    printf("static=%d\n",b);  printing the value of a static variable
-    auto int a=10;
+    static int b; //static variable is declared,by default it isinitialized as zero and only once,scope is within the block and its lifetime is throught the program
+    ++b; // b is preincrement 
+    printf("static=%d\n",b);  
+    auto int a=10; //auto variable is declared and it is initialized as 10 because its default value is garbage
     ++a;
     printf("auto=%d \n",a);
     register int c=5;
     ++c;
     printf("register=%d \n",c);
+    //printf("address of register=%p",c);
 }
 int main()
 {

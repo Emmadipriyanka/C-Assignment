@@ -7,6 +7,9 @@ void fun()
     auto int a=10;
     ++a;
     printf("auto=%d \n",a);
+    register int c=5;
+    ++c;
+    printf("register=%d \n",c);
 }
 int main()
 {
@@ -19,7 +22,10 @@ output:
 
 static=6
 auto=11 
+register=6
 static=7
 auto=11 
+register=6
 static=8
 auto=11 
+register=6

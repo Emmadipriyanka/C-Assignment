@@ -1,0 +1,47 @@
+#include<stdio.h>
+int main()
+{
+	int a,b,c;
+	printf("enter 2 numbers");
+	scanf("%d %d",&a,&b);
+	c=a+b;
+	printf("addition is=%d \n",c);
+	c=a-b;
+	printf("sub is=%d \n",c);
+	c=a*b;
+	printf("mul is=%d \n",c);
+	c=a/b;
+	printf("div is=%d \n",c);
+	c=a%b;
+	printf("modu is=%d \n",c);
+	c=++a;
+	printf("increment is=%d \n",c);
+	c=--b;
+	printf("decrement is=%d \n",c);
+	if(a&b)
+		printf("a&b=%d \n", a&b);
+	if(a|b)
+		printf("a|b=%d \n",a|b);
+	printf("%d\n",a<<1);  //it prints the value after performing left shift by 1
+	printf("%d\n",b>>1);  //it prints the value after performing right shift by 1
+	if(a==b && a>b)
+		printf("LOGICAL AND\n");
+	if(a==b || (++b))
+		printf("LOGICAL OR\n");
+}
+
+output:
+
+enter 2 numbers2 4
+addition is=6 
+sub is=-2 
+mul is=8 
+div is=0 
+modu is=2 
+increment is=3 
+decrement is=3 
+a&b=3 
+a|b=3 
+6
+1
+LOGICAL OR

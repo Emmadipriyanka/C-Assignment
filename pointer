@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    int *ptr1,*ptr2; //declarinig integer pointers as ptr1 and ptr2
+    int x,y,temp; //declaring integer variables as x and y and also a temporary variable
+    printf("enter numbers:");
+    scanf("%d %d",&x,&y);
+    ptr1=&x; //assigning address of x to ptr1
+    ptr2=&y; //assigning address of y to ptr2
+    temp=*ptr2; //temporary is assigning, with the value present in the address that was stored in ptr1
+    *ptr2=*ptr1; //ptr2 value is replced with value present in the address that was stored in ptr1
+    *ptr1=temp; //ptr1  value is replced with value present in the address that was stored in ptr1
+    printf("x=%d y=%d",x,y);
+}
+
+output:
+
+enter numbers:8 10
+x=10 y=8

@@ -1,0 +1,16 @@
+#include<stdio.h>
+void fun()
+{
+    static int b=5;
+    printf("static=%d\n",b);
+}
+int main()
+{
+    auto int a=10;
+    printf("auto=%d \n",a);
+    fun();
+}
+
+output:
+auto=10
+static=5

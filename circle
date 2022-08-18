@@ -1,4 +1,4 @@
-const float pie=3.14;
+const float PIE=3.14;
 #include<stdio.h>
 int main()
 {
@@ -6,8 +6,8 @@ int main()
     int r;
     printf("enter r value:");
     scanf("%d",&r);
-    area=pie*r*r;
-    circum=2*pie*r;
+    area=PIE*r*r;
+    circum=2*PIE*r;
     printf("area=%.2f circum=%.2f",area,circum);
 }
 

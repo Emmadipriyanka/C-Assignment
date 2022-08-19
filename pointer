@@ -1,0 +1,21 @@
+#include<stdio.h>
+struct emp{
+    int eno;
+    char ena[20];
+    float emsa;
+};
+int main()
+{
+    char* cp;
+    int* ip;
+    struct emp* semp;
+    printf("sizeof char* is :%ld \n",sizeof(cp));
+    printf("sizeof int* is :%ld \n",sizeof(ip));
+    printf("sizeof struct emp* is :%ld",sizeof(semp));
+}
+
+output:
+
+sizeof char* is :8 
+sizeof int* is :8 
+sizeof struct emp* is :8

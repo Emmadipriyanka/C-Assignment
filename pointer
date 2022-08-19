@@ -6,9 +6,9 @@ struct emp{
 };
 int main()
 {
-    char* cp;
-    int* ip;
-    struct emp* semp;
+    char* cp; //charcter pointer
+    int* ip;//integer pointer
+    struct emp* semp; //struct emp ponter
     printf("sizeof char* is :%ld \n",sizeof(cp));
     printf("sizeof int* is :%ld \n",sizeof(ip));
     printf("sizeof struct emp* is :%ld",sizeof(semp));

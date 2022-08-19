@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    char a[6]="priya";// character array a is decalared and initialized
+    char *p[5];//pointer character array p is decalared with size five
+    printf("original character:");
+    for(int i=0;i<5;i++)
+    {
+        //printf("%c \t",a[i]); //it prints the character array elements by using array indexes
+        printf("%c",*(a+i)); //it prints the character array elements by using array modifier
+    }
+    printf("\n duplicate character:");
+    for(int i=0;i<5;i++)
+    {
+        p[i]=&a[i];
+        //printf("  %c \t",*(p[i])); //it prints the character array elements by using the pointer array indexes
+        printf("%c",**(p+i)); //it prints the character array elements by using the pointer array modifier
+    }
+}
+
+output:
+
+original character:priya
+duplicate character:priya

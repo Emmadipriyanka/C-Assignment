@@ -1,0 +1,42 @@
+#include<stdio.h>
+#include<string.h>
+void len(char*);
+int main()
+{
+    char s1[10]="pinky";
+    char s2[10]="priya";
+    char s3[20];
+    /*printf("enter first string: \n");
+    scanf("%s",s1);
+    printf("enter second string: \n");
+    scanf("%s",s2);*/
+    //strcat(s1,s2);
+    int i=0,j=0;
+    while(s1!='\0')
+    {
+        s3[j]=s1[i];
+        i++;
+        j++;
+    }
+    i=0;
+    while(s2!='\0')
+    {
+        s3[j]=s2[i];
+        i++;
+        j++;
+    }
+    s3[j]='\0';
+    printf("string concatenation:%s \n",s3);
+    len(s3);
+}
+void len(char *p)
+{
+    int count=0;
+    while(*p!='\10')
+    {
+        count++;
+        p++;
+    }
+    printf("length of the new string is:%d",count);
+}
+    

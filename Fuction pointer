@@ -1,0 +1,24 @@
+#include<stdio.h>
+int add(int x,int y)
+{
+    int z=x+y;
+    return z;
+}
+int mul(int a,int b,int c)
+{
+    int w=a*b*c;
+    return w;
+}
+int main()
+{
+    int r1,r2;
+    int (*ptr) (int,int);//prototype of a function pointer 
+    ptr=&add;//the fpointer store the address of a add function
+    r1=ptr(10,20);
+    printf("r1=%d",r1);
+    //ptr=&mul;// assignment to ‘int (*)(int,  int)’ from error:incompatible pointer type 
+}
+
+output:
+
+r1=30
